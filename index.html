@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b8435a8975.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo5.png" alt="logo">
+             <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+             </ul>
+             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>John Paul</span>!<br>Welcome to my Portfolio.</h1>
+            </div>
+        </div>
+    </div>
+
+        <!-- about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user7.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>IT graduate. A mature team worker,
+                        able to work under pressure. <br> I
+                        consider myself a hardworking and
+                        self motivated person.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            
+                           
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> Web Development</span><br>Creating and Building Website.</li>
+                                <li><span>Mock-up Designs</span><br>Creating Mock-ups.</li>
+                                <li><span>Adobe Photoshop</span><br>Editing photos and creating banners.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023</span><br>Internship at GC Web Experts as Junior Web Developer using Wordpress.</li>
+                                <li><span>2017-2019</span><br>Service Crew at Jollibee SMF1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-connectdevelop"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse vel veritatis aspernatur accusantium, delectus assumenda. 
+                        Minus quidem recusandae ut iusto ratione soluta earum veniam necessitatibus? Veritatis sit ullam possimus?</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse vel veritatis aspernatur accusantium, delectus assumenda. 
+                        Minus quidem recusandae ut iusto ratione soluta earum veniam necessitatibus? Veritatis sit ullam possimus?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project1.png">
+                    <div class="layer">
+                        <h3>Simple Web Calculator</h3>
+                        <p>can do addition, subtraction, multiplication and division mathematical calculations.</p>
+                        <a href="https://itspopaul.github.io/The-Calculator/?fbclid=IwAR0qUmtAbgVRkLtQPuxUHYhSHTGahD66A4vK0BIoizlbaQC8-wjK-1w2YVg"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/project2.png">
+                    <div class="layer">
+                        <h3>Intern Project</h3>
+                        <p>This website is my intership project using wordpress.</p>
+                        <a href="https://casamacoto.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/project3.png">
+                    <div class="layer">
+                        <h3>Simple Web Quiz</h3>
+                    <p>Answer different question with score result. Click the link below.</p>
+                    <a href="https://itspopaul.github.io/Simple-Quiz/?fbclid=IwAR2TMXTTx3m7elWPiJ2Rbx-ZEmGMU3LTQ0H9wZ-_KMUhQb_VS3fGuaesoa8"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+ <!--   Contact form -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> paulocinus@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09392933407</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100074829005877"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/itsnotpaul_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/itspopaul"><i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <!-- DL CV-->
+                <a href="images/myresume.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Add your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Paul. Personal Portfolio <i class="fa-solid fa-heart"></i></p>
+    </div>
+    
+  </div>
+
+ <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+ </script>
+
+ <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+ </script>
+
+
+ 
+</body>
+</html>
